@@ -22,69 +22,27 @@
 <body>
 
     <div class="container">
-        <h2>Collections</h2>
-        <ul class="collection with-header">
-            <li class="collection-header"><h4>Customers</h4></li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Leon</span>
-                <p class="grey-text">Con melena</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Colibri</span>
-                <p class="grey-text">Sin plumas</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Rasputin</span>
-                <p class="grey-text">Casting starts soon</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Merlina</span>
-                <p class="grey-text">Le pusieron dizque Sacha</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Paolo</span>
-                <p class="grey-text">Gordito y bello</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Anastacia</span>
-                <p class="grey-text">Just a name idea</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Morfeo</span>
-                <p class="grey-text">Just a name idea</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-        </ul>
+        <h2>Modals</h2>
+
+        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms & Conditions</h4>
+                <p>Aenean pulvinar pulvinar convallis. Donec lobortis turpis sed orci varius facilisis. Proin quis augue a diam mattis tempor at ut nisi. Mauris sodales posuere neque, vel sagittis diam viverra quis. Vestibulum pulvinar ex augue, consectetur scelerisque dolor tempus ac. Vivamus suscipit metus risus, vel finibus eros malesuada id. Sed eu lacus vel ex efficitur porttitor. Pellentesque et diam neque.</p>
+                <div class="modal-footer">
+                    <a href="#" class="modal-close btn orange">Agree & Close</a>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#terms').modal();
+    });
+    </script>
 </body>
 </html>
