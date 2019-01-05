@@ -20,35 +20,51 @@
      </style>
 </head>
 <body>
-    <nav class="nav-wrapper indigo">
-        <div class="container">
-            <a href="#" class="brand-logo">Site Title</a>
-            <a href="#" class="sidenav-trigger" data-target="mobile-links">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="btn-floating indigo darken-4 z-depth-0">
-                    <i class="material-icons">notifications</i>
-                </a></li>
-                <li><span class="badge white-text pink">5 new</span></li>
-            </ul>
+
+    <div class="container">
+        <h2>Cards</h2>
+
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/pollo-mango.jpg" alt=""/>
+                        <a href="#" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Pollo en ensalada de mango</span>
+                        <p>Aenean pulvinar pulvinar convallis. Donec lobortis turpis sed orci varius facilisis. Proin quis augue a diam mattis tempor at ut nisi. Mauris sodales posuere neque, vel sagittis diam viverra quis. Vestibulum pulvinar ex augue, consectetur scelerisque dolor tempus ac. Vivamus suscipit metus risus, vel finibus eros malesuada id. Sed eu lacus vel ex efficitur porttitor. Pellentesque et diam neque.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Mas detalles</a>
+                        <a href="#">Contenido nutricional</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                    <div class="card">
+                            <div class="card-image">
+                                <img src="img/pasta-pesto.jpg" alt=""/>
+                                <a href="#" class="halfway-fab btn-floating pink pulse">
+                                    <i class="material-icons">favorite</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Pasta Pesto</span>
+                                <p>Aenean pulvinar pulvinar convallis. Donec lobortis turpis sed orci varius facilisis. Proin quis augue a diam mattis tempor at ut nisi. Mauris sodales posuere neque, vel sagittis diam viverra quis. Vestibulum pulvinar ex augue, consectetur scelerisque dolor tempus ac. Vivamus suscipit metus risus, vel finibus eros malesuada id. Sed eu lacus vel ex efficitur porttitor. Pellentesque et diam neque.</p>
+                            </div>
+                            <div class="card-action">
+                                    <a href="#">Mas detalles</a>
+                                    <a href="#">Contenido nutricional</a>
+                            </div>
+                        </div>
+            </div>
         </div>
-    </nav>
-    <ul class="sidenav" id="mobile-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.sidenav').sidenav();
-        })
-    </script>
 </body>
 </html>
