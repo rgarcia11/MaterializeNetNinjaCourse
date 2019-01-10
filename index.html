@@ -23,14 +23,14 @@
         background-position: center;
         min-height: 1000px;
     }
+    .section{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
     @media screen and (max-width: 670px){
         header{
             min-height: 500px;
         }
-    }
-    .section{
-        padding-top: 4vw;
-        padding-bottom: 4vw;
     }
     </style>
     
@@ -89,13 +89,21 @@
             </div>
         </div>
     </section>
-    <!-- Parallax -->
-
-    <!-- Services / tabs -->
 
     <!-- Parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/street.jpg" class="responsive-img" alt="Street at night">
+        </div>
+    </div>
 
-    <!-- Contact form -->
+    
+    <!-- Parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/stars.jpg" class="responsive-img" alt="Starry night">
+        </div>
+    </div>
 
     <!-- Footer -->
 
@@ -109,6 +117,7 @@
         $(document).ready(function(){
             $('.sidenav').sidenav();
             $('.materialboxed').materialbox();
+            $('.parallax').parallax();
         })
     </script>
 </body>
