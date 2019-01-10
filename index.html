@@ -15,10 +15,55 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     
     <title>Photo Ninja</title>
+
+    <style>
+    header{
+        background-image: url(img/man.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+    }
+    @media screen and (max-width: 670px){
+        header{
+            min-height: 500px;
+        }
+    }
+    </style>
     
 </head>
 <body>
     
+    <!-- Navbar -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">Photo Ninja</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Parallax -->
+
+    <!-- Services / tabs -->
+
+    <!-- Parallax -->
+
+    <!-- Contact form -->
+
+    <!-- Footer -->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -28,6 +73,7 @@
 
     <script>
         $(document).ready(function(){
+            $('.sidenav').sidenav();
         })
     </script>
 </body>
