@@ -33,6 +33,24 @@
     .tabs .tab a:focus, .tabs .tab a:focus.active{
         background: transparent;
     }
+    .input-field .prefix.active, textarea.materialize-textarea .prefix.active{
+        color: #1a237e;    
+        transition: opacity 0.2s ease-out !important;
+        -ms-transition: opacity 0.2s ease-out !important;
+        -moz-transition: opacity 0.2s ease-out !important;
+        -webkit-transition: opacity 0.2s ease-out !important;
+    }
+    .input-field input:focus + label, textarea.materialize-textarea:focus + label{
+        color: #1a237e !important;
+    }
+    .input-field input:focus, textarea.materialize-textarea:focus{
+        box-shadow: 0 1px 0 0 #1a237e !important;
+        border-bottom: 1px solid #1a237e !important;
+        -webkit-border-bottom: 1px solid #1a237e !important;
+    }
+    .input-field label, textarea.materialize-textarea label{
+        pointer-events: all !important;
+    }
     @media screen and (max-width: 670px){
         header{
             min-height: 500px;
@@ -140,6 +158,65 @@
             <img src="img/stars.jpg" class="responsive-img" alt="Starry night">
         </div>
     </div>
+
+    <!-- Contact form -->
+    <section class="section container" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get In Touch!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Your message</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Choose a date you need me for</label>
+                    </div>
+                    <div class="input-field">
+                        <p>Services required:</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Photography</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Editing</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Publicity</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Others</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn indigo darken-4">Submit!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     
 
     <!-- Footer -->
@@ -156,6 +233,18 @@
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
             $('.tabs').tabs();
+
+            const currentYear = new Date();
+            const maxYear = new Date();
+            maxYear.setFullYear( maxYear.getFullYear() + 2 );
+            $('.datepicker').datepicker({
+                disableWeekends: true,
+                format: 'dd mmm, yyyy',
+                firstDay: 1,
+                minDate: currentYear,
+                maxDate: maxYear,
+                yearRange: [currentYear.getFullYear(), maxYear.getFullYear()]
+            });
         })
     </script>
 </body>
