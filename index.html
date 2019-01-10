@@ -51,6 +51,9 @@
     .input-field label, textarea.materialize-textarea label{
         pointer-events: all !important;
     }
+    .social{
+        background-color: rgba(26, 35, 126, 0.5);
+    }
     @media screen and (max-width: 670px){
         header{
             min-height: 500px;
@@ -70,9 +73,21 @@
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Photos</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small social" data-tooltip="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small social" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small social" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small social" data-tooltip="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
                 </ul>
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
                     <li><a href="#">Photos</a></li>
@@ -84,7 +99,7 @@
     </header>
 
     <!-- Photo / grid -->
-    <section class="container section" id="photos">
+    <section class="container section scrollspy" id="photos">
         <div class="row">
             <div class="col s12 l4">
                 <img src="img/portrait.jpg" alt="Portrait" class="responsive-img materialboxed">
@@ -122,7 +137,7 @@
     </div>
 
     <!-- Services / tabs -->
-    <section class="container section" id="services">
+    <section class="container section scrollspy" id="services">
         <div class="row">
             <div class="col s12 l4">
                 <h2 class="indigo-text text-darken-4">What I do</h2>
@@ -160,7 +175,7 @@
     </div>
 
     <!-- Contact form -->
-    <section class="section container" id="contact">
+    <section class="section container scrollspy" id="contact">
         <div class="row">
             <div class="col s12 l5">
                 <h2 class="indigo-text text-darken-4">Get In Touch!</h2>
@@ -211,7 +226,9 @@
                         </p>
                     </div>
                     <div class="input-field center">
-                        <button class="btn indigo darken-4">Submit!</button>
+                        <button class="btn indigo darken-4 waves-effect waves-light" type="submit">Submit!
+                            <i class="material-icons right">send</i>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -278,6 +295,8 @@
                 maxDate: maxYear,
                 yearRange: [currentYear.getFullYear(), maxYear.getFullYear()]
             });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
         })
     </script>
 </body>
