@@ -28,6 +28,10 @@
             min-height: 500px;
         }
     }
+    .section{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
     </style>
     
 </head>
@@ -55,6 +59,36 @@
         </nav>
     </header>
 
+    <!-- Photo / grid -->
+    <section class="container section" id="photos">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/portrait.jpg" alt="Portrait" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Portraits</h2>
+                <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/city.jpg" alt="Cityscapes" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align offset-l1">
+                <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+                <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/nature.jpg" alt="Nature" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Nature</h2>
+                <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
     <!-- Parallax -->
 
     <!-- Services / tabs -->
@@ -74,6 +108,7 @@
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
         })
     </script>
 </body>
